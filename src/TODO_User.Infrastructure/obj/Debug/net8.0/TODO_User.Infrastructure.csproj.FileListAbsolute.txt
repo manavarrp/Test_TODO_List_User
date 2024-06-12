@@ -1,0 +1,11 @@
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Infrastructure\bin\Debug\net8.0\TODO_User.Infrastructure.deps.json
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Infrastructure\bin\Debug\net8.0\TODO_User.Infrastructure.dll
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Infrastructure\bin\Debug\net8.0\TODO_User.Infrastructure.pdb
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Infrastructure\obj\Debug\net8.0\TODO_User.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Infrastructure\obj\Debug\net8.0\TODO_User.Infrastructure.AssemblyInfoInputs.cache
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Infrastructure\obj\Debug\net8.0\TODO_User.Infrastructure.AssemblyInfo.cs
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Infrastructure\obj\Debug\net8.0\TODO_User.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Infrastructure\obj\Debug\net8.0\TODO_User.Infrastructure.dll
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Infrastructure\obj\Debug\net8.0\refint\TODO_User.Infrastructure.dll
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Infrastructure\obj\Debug\net8.0\TODO_User.Infrastructure.pdb
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Infrastructure\obj\Debug\net8.0\ref\TODO_User.Infrastructure.dll

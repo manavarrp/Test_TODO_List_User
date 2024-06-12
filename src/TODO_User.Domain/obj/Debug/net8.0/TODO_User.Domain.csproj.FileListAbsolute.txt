@@ -1,0 +1,11 @@
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Domain\bin\Debug\net8.0\TODO_User.Domain.deps.json
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Domain\bin\Debug\net8.0\TODO_User.Domain.dll
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Domain\bin\Debug\net8.0\TODO_User.Domain.pdb
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Domain\obj\Debug\net8.0\TODO_User.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Domain\obj\Debug\net8.0\TODO_User.Domain.AssemblyInfoInputs.cache
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Domain\obj\Debug\net8.0\TODO_User.Domain.AssemblyInfo.cs
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Domain\obj\Debug\net8.0\TODO_User.Domain.csproj.CoreCompileInputs.cache
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Domain\obj\Debug\net8.0\TODO_User.Domain.dll
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Domain\obj\Debug\net8.0\refint\TODO_User.Domain.dll
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Domain\obj\Debug\net8.0\TODO_User.Domain.pdb
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Domain\obj\Debug\net8.0\ref\TODO_User.Domain.dll

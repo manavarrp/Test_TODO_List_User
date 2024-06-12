@@ -1,0 +1,11 @@
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Application\bin\Debug\net8.0\TODO_User.Application.deps.json
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Application\bin\Debug\net8.0\TODO_User.Application.dll
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Application\bin\Debug\net8.0\TODO_User.Application.pdb
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Application\obj\Debug\net8.0\TODO_User.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Application\obj\Debug\net8.0\TODO_User.Application.AssemblyInfoInputs.cache
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Application\obj\Debug\net8.0\TODO_User.Application.AssemblyInfo.cs
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Application\obj\Debug\net8.0\TODO_User.Application.csproj.CoreCompileInputs.cache
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Application\obj\Debug\net8.0\TODO_User.Application.dll
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Application\obj\Debug\net8.0\refint\TODO_User.Application.dll
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Application\obj\Debug\net8.0\TODO_User.Application.pdb
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Application\obj\Debug\net8.0\ref\TODO_User.Application.dll
