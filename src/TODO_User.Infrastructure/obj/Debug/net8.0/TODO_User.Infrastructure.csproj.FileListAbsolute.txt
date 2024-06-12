@@ -9,3 +9,10 @@ C:\Projects\TODO_User\TODO_User\src\TODO_User.Infrastructure\obj\Debug\net8.0\TO
 C:\Projects\TODO_User\TODO_User\src\TODO_User.Infrastructure\obj\Debug\net8.0\refint\TODO_User.Infrastructure.dll
 C:\Projects\TODO_User\TODO_User\src\TODO_User.Infrastructure\obj\Debug\net8.0\TODO_User.Infrastructure.pdb
 C:\Projects\TODO_User\TODO_User\src\TODO_User.Infrastructure\obj\Debug\net8.0\ref\TODO_User.Infrastructure.dll
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Infrastructure\bin\Debug\net8.0\TODO_User.Domain.dll
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Infrastructure\bin\Debug\net8.0\TODO_User.Domain.pdb
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Infrastructure\obj\Debug\net8.0\TODO_User.Infrastructure.csproj.AssemblyReference.cache
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Infrastructure\obj\Debug\net8.0\TODO_User.Infrastructure.sourcelink.json
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Infrastructure\obj\Debug\net8.0\TODO_User.Infrastructure.csproj.CopyComplete
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Infrastructure\bin\Debug\net8.0\TODO_User.Application.dll
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Infrastructure\bin\Debug\net8.0\TODO_User.Application.pdb

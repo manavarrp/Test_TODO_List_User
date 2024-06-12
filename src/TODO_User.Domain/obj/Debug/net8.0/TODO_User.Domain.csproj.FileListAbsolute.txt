@@ -9,3 +9,5 @@ C:\Projects\TODO_User\TODO_User\src\TODO_User.Domain\obj\Debug\net8.0\TODO_User.
 C:\Projects\TODO_User\TODO_User\src\TODO_User.Domain\obj\Debug\net8.0\refint\TODO_User.Domain.dll
 C:\Projects\TODO_User\TODO_User\src\TODO_User.Domain\obj\Debug\net8.0\TODO_User.Domain.pdb
 C:\Projects\TODO_User\TODO_User\src\TODO_User.Domain\obj\Debug\net8.0\ref\TODO_User.Domain.dll
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Domain\obj\Debug\net8.0\TODO_User.Domain.csproj.AssemblyReference.cache
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Domain\obj\Debug\net8.0\TODO_User.Domain.sourcelink.json
