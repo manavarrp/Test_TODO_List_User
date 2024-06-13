@@ -156,3 +156,4 @@ C:\Projects\TODO_User\TODO_User\src\TODO_User.Api\bin\Debug\net8.0\MediatR.Contr
 C:\Projects\TODO_User\TODO_User\src\TODO_User.Api\bin\Debug\net8.0\Scrutor.dll
 C:\Projects\TODO_User\TODO_User\src\TODO_User.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.dll
 C:\Projects\TODO_User\TODO_User\src\TODO_User.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Api\obj\Debug\net8.0\TODO_User.Api.MvcApplicationPartsAssemblyInfo.cs

@@ -242,7 +242,7 @@ namespace TODO_User.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("LastUpdated")
+                    b.Property<DateTime?>("LastUpdated")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")

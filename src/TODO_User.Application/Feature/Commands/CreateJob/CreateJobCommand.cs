@@ -7,6 +7,6 @@ namespace TODO_User.Application.Feature.Commands.CreateJob
     {
         public string Name { get; set; }
         public string Description { get; set; }
-        public int State { get; set; }
+        
     }
 }

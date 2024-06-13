@@ -10,8 +10,6 @@ namespace TODO_User.Application.Feature.Commands.CreateJob
                .NotEmpty().WithMessage("Nombre es obligatorio.");
             RuleFor(x => x.Description)
                .NotEmpty().WithMessage("Descripcion es obligatoria.");
-            RuleFor(x => x.State)
-               .NotEmpty().WithMessage("Estado es obligatorio.");
         }
     }
 }

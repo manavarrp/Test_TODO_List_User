@@ -8,10 +8,8 @@ namespace TODO_User.Application.Feature.Commands.UpdateJob
         {
             RuleFor(x => x.Id)
             .NotEmpty().WithMessage("Identificador es obligatorio.");
-            RuleFor(x => x.Name)
-             .NotEmpty().WithMessage("Nombre es obligatorio.");
-            RuleFor(x => x.Description)
-               .NotEmpty().WithMessage("Descripcion es obligatoria.");
+            RuleFor(x => x.State)
+             .NotEmpty().WithMessage("Estado de la tarea es obligatorio.");
         }
     }
 }

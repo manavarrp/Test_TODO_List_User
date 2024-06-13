@@ -21,12 +21,19 @@ namespace TODO_User.Api.Controllers
         {
 
             var response = await _accountApplication.CreateUserAsync(userDTO);
+            if (!response.Flag) return BadRequest(response);
+
             return Ok(response);
         }
         [HttpPost("login")]
         public async Task<IActionResult> Login(LoginDTO loginDTO)
         {
+            
             var response = await _accountApplication.LoginAccount(loginDTO);
+
+            if (!response.Flag) return BadRequest(response);
+          
+
             return Ok(response);
         }
 

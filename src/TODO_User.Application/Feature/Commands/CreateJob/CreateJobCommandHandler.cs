@@ -3,7 +3,6 @@ using FluentValidation.Results;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.IdentityModel.Tokens;
-using System.Security.Claims;
 using TODO_User.Application.Commons.Bases.Response;
 using TODO_User.Application.Helpers;
 using TODO_User.Application.Interface;
@@ -45,6 +44,7 @@ namespace TODO_User.Application.Feature.Commands.CreateJob
                 var job = _mapper.Map<Job>(request);
                 job.CreatedBy = userEmail!;
                 job.CreatedAt = DateTime.Now;
+                job.State = 0;
                 await _jobApplication.AddAsync(job);
                 return new BaseResponse(true, "Tarea creada");
             }
