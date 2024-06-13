@@ -10,6 +10,9 @@ using TODO_User.Domain.Entities.Users;
 
 namespace TODO_User.Application.Feature.Commands.CreateJob
 {
+    /// <summary>
+    /// Manejador de comandos para crear una nueva tarea (Job).
+    /// </summary>
     internal class CreateJobCommandHandler : IRequestHandler<CreateJobCommand, BaseResponse>
     {
         private readonly IJobApplication _jobApplication;
@@ -27,6 +30,7 @@ namespace TODO_User.Application.Feature.Commands.CreateJob
         {
             try
             {
+                // Validar la solicitud utilizando FluentValidation
                 CreateJobCommandValidator validator = new();
                 ValidationResult validationResult = validator.Validate(request);
 

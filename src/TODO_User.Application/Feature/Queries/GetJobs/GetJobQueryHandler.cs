@@ -4,6 +4,9 @@ using TODO_User.Application.Interface;
 
 namespace TODO_User.Application.Feature.Queries.GetJobs
 {
+    /// <summary>
+    /// Manejador de consultas para obtener las tareas (jobs) de un usuario por su correo electrónico.
+    /// </summary>
     public class GetJobQueryHandler : IRequestHandler<GetJobQuery, List<GetJobsDto>>
     {
         private readonly IJobApplication _jobApplication;

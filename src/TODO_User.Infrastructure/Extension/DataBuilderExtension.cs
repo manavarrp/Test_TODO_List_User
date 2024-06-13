@@ -12,17 +12,22 @@ using TODO_User.Infrastructure.Persistence.Repository;
 
 namespace TODO_User.Infrastructure.Extension
 {
+    /// <summary>
+    /// Clase de extensión para configurar servicios relacionados con la base de datos y autenticación JWT.
+    /// </summary>
     public static class DataBuilderExtension
     {
         public static IServiceCollection ConfigureDatabase(this IServiceCollection services, IConfiguration configuration) 
         {
+            // Configuración del contexto de base de datos IdentityContext utilizando SQL Server
             services.AddDbContext<IdentityContext>(options => options.UseSqlServer(configuration.GetConnectionString("Default")));
 
+            // Registro de servicios de aplicación
             services.AddScoped<IAccountApplication, AccountRepository>();
             services.AddScoped<IJobApplication, JobRepository>();
-
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
+            // Configuración de la autenticación JWT
             services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

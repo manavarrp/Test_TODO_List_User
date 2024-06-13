@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mzR82W+uwbNKrA+4pFooxnrXq7eaMZuDBDXcqyBZfZrYQhqXXFtPacylZLGFmF+gWry5zBLCi6ez/oP5SH6hFQ==",
+  "dgSpecHash": "nB9tj+r+zG97sMPY3ZyiGenUuglO2jt2MDInN9H3dBfOI4REDtUCJSklgNuUpfZVzMiXLaA2A23c/FAUZq5Taw==",
   "success": true,
   "projectFilePath": "C:\\Projects\\TODO_User\\TODO_User\\src\\TODO_User.Api\\TODO_User.Api.csproj",
   "expectedPackageFiles": [
@@ -74,6 +74,7 @@
     "C:\\Users\\Mario Navarro\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
     "C:\\Users\\Mario Navarro\\.nuget\\packages\\microsoft.openapi\\1.3.1\\microsoft.openapi.1.3.1.nupkg.sha512",
     "C:\\Users\\Mario Navarro\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "C:\\Users\\Mario Navarro\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512",
     "C:\\Users\\Mario Navarro\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\Mario Navarro\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\Mario Navarro\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",

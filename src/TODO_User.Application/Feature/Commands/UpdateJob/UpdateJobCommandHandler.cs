@@ -11,6 +11,9 @@ using System.Security.Claims;
 
 namespace TODO_User.Application.Feature.Commands.UpdateJob
 {
+    /// <summary>
+    /// Manejador de comandos para atulizar  el estado de una tarea (Job).
+    /// </summary>
     public class UpdateJobCommandHandler : IRequestHandler<UpdateJobCommand, BaseResponse>
     {
         private readonly IJobApplication _jobApplication;

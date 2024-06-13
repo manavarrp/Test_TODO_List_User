@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("b4877a26-7ca6-4756-a458-fb884887f833")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("TODO_User.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+587196b44076b090f9c4522c9449fef2f4d20c64")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ac973a6002dfcd711a03c4e203e887c4892eaf3")]
 [assembly: System.Reflection.AssemblyProductAttribute("TODO_User.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TODO_User.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
