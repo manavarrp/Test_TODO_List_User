@@ -6,12 +6,10 @@ namespace TODO_User.Application.Dto.Identity
     {
      
         public string Name { get; set; }
-     
         public string Email { get; set; }
-
-  
         public string Password { get; set; }
 
+        [Compare(nameof(Password))]
         public string ConfirmPassword { get; set; }
         
     }

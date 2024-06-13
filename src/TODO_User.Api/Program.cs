@@ -1,6 +1,8 @@
 using TODO_User.Api.Extensions;
 using TODO_User.Infrastructure.Extension;
 using TODO_User.Application;
+using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.Filters;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +16,18 @@ builder.Services.ConfigureDatabase(builder.Configuration);
 builder.Services.ConfigureIdentity();
 builder.Services.AddDataProtection();
 builder.Services.AddAplicationServices();
+//Add authentication to Swagger UI
+builder.Services.AddSwaggerGen(options =>
+{
+    options.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
+    {
+        In = ParameterLocation.Header,
+        Name = "Authorization",
+        Type = SecuritySchemeType.ApiKey
+    });
+
+    options.OperationFilter<SecurityRequirementsOperationFilter>();
+});
 
 
 var app = builder.Build();
@@ -27,6 +41,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 app.MigrateDatabase();
 app.MapControllers();

@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
@@ -19,14 +20,14 @@ namespace TODO_User.Api.Controllers
         {
             _mediator = mediator;
         }
-
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetAllJobs()
         {
             var orders = await _mediator.Send(new GetJobQuery());
             return Ok(orders);
         }
-
+        [Authorize]
         [HttpPost]
         public async Task<IActionResult> CrateJob([FromBody]  CreateJobCommand command)
         {
@@ -35,7 +36,7 @@ namespace TODO_User.Api.Controllers
             return Ok(response);
            
         }
-
+        [Authorize]
         [HttpPut]
         public async Task<IActionResult> UpdateJob([FromBody] UpdateJobCommand command)
         {
@@ -44,7 +45,7 @@ namespace TODO_User.Api.Controllers
             return Ok(response);
 
         }
-
+        [Authorize]
         [HttpDelete]
         public async Task<IActionResult> DeleteJob(int id)
         {
