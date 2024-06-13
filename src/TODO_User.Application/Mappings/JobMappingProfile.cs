@@ -13,7 +13,7 @@ namespace TODO_User.Application.Mappings
             CreateMap<Job, CreateJobCommand>().ReverseMap();
             CreateMap<Job, UpdateJobCommand>().ReverseMap();
             CreateMap<Job, GetJobsDto>().
-                ForMember(x => x.Status, x => x.MapFrom(y => y.Status == true ? "Resuelto" : "No resuelto"))
+                ForMember(x => x.Status, x => x.MapFrom(y => y.State == 1 ? "Resuelto" : "No resuelto"))
                .ReverseMap();
         }
     }

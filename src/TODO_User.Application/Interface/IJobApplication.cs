@@ -5,6 +5,7 @@ namespace TODO_User.Application.Interface
 {
     public interface IJobApplication : ICommonRepository<Job>
     {
-        Task<IEnumerable<Job>> GetJobs();
+        Task<IEnumerable<Job>> GetJobByEmail(string userEmail);
+        Task<Job> GetByIdAsync(int id);
     }
 }

@@ -17,7 +17,7 @@ namespace TODO_User.Application.Feature.Queries.GetJobs
 
         public async Task<List<GetJobsDto>> Handle(GetJobQuery request, CancellationToken cancellationToken)
         {
-            var jobs = await _jobApplication.GetJobs();
+            var jobs = await _jobApplication.GetJobByEmail(request.UserEmail);
             return _mapper.Map<List<GetJobsDto>>(jobs);
 
         }

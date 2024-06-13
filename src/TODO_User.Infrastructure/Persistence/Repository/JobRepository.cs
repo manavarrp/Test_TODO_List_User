@@ -1,10 +1,5 @@
 ﻿using EF.Core.Repository.Repository;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TODO_User.Application.Interface;
 using TODO_User.Domain.Entities.Users;
 
@@ -19,10 +14,17 @@ namespace TODO_User.Infrastructure.Persistence.Repository
             _identityContext = dbContext;
         }
 
-        public async Task<IEnumerable<Job>> GetJobs()
+        public async Task<IEnumerable<Job>> GetJobByEmail( string userEmail)
         {
-            var jobList = await _identityContext.Jobs.ToListAsync();
+            var jobList = await _identityContext.Jobs
+                .Where(j => j.CreatedBy == userEmail)
+                .ToListAsync();
             return jobList;
+        }
+
+        public async Task<Job> GetByIdAsync(int id)
+        {
+            return await _identityContext.Jobs.FindAsync(id);
         }
     }
 }

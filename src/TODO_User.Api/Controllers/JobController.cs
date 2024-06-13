@@ -22,9 +22,9 @@ namespace TODO_User.Api.Controllers
         }
         [Authorize]
         [HttpGet]
-        public async Task<IActionResult> GetAllJobs()
+        public async Task<IActionResult> GetAllJobs(string userEmail)
         {
-            var orders = await _mediator.Send(new GetJobQuery());
+            var orders = await _mediator.Send(new GetJobQuery(userEmail));
             return Ok(orders);
         }
         [Authorize]

@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
 using FluentValidation.Results;
 using MediatR;
+using Microsoft.AspNetCore.Http;
 using Microsoft.IdentityModel.Tokens;
+using System.Security.Claims;
 using TODO_User.Application.Commons.Bases.Response;
 using TODO_User.Application.Helpers;
 using TODO_User.Application.Interface;
@@ -13,11 +15,13 @@ namespace TODO_User.Application.Feature.Commands.CreateJob
     {
         private readonly IJobApplication _jobApplication;
         private readonly IMapper _mapper;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public CreateJobCommandHandler(IJobApplication jobApplication, IMapper mapper)
+        public CreateJobCommandHandler(IJobApplication jobApplication, IMapper mapper, IHttpContextAccessor httpContextAccessor)
         {
             _jobApplication = jobApplication;
             _mapper = mapper;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         public async Task<BaseResponse> Handle(CreateJobCommand request, CancellationToken cancellationToken)
@@ -28,11 +32,18 @@ namespace TODO_User.Application.Feature.Commands.CreateJob
                 ValidationResult validationResult = validator.Validate(request);
 
                 var errors = ValidationHelper.ConvertValidationErrorsToDictionary(validationResult);
+
                 if (!errors.IsNullOrEmpty())
                 {
                     return new BaseResponse(false, "No fue posible crear la tarea", errors);
                 }
+
+
+                // Obtener el email del usuario desde el token JWT
+                var userEmail = _httpContextAccessor.HttpContext.User.FindFirst("Email")?.Value;
+
                 var job = _mapper.Map<Job>(request);
+                job.CreatedBy = userEmail!;
                 job.CreatedAt = DateTime.Now;
                 await _jobApplication.AddAsync(job);
                 return new BaseResponse(true, "Tarea creada");
