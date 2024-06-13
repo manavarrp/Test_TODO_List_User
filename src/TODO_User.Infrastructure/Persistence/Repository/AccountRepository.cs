@@ -1,6 +1,5 @@
 ﻿using FluentValidation.Results;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
@@ -8,6 +7,7 @@ using System.Security.Claims;
 using System.Text;
 using TODO_User.Application.Commons.Bases.Response;
 using TODO_User.Application.Dto.Identity;
+using TODO_User.Application.Helpers;
 using TODO_User.Application.Interface.Identity;
 using TODO_User.Domain.Entities.Identity;
 
@@ -40,25 +40,17 @@ namespace TODO_User.Infrastructure.Persistence.Repository
                     Name = request.Name,
                 };
 
-              
-
                 CreateUserRequestDTOValidator validator = new();
                 ValidationResult validationResult = validator.Validate(request);
 
+                var errors = ValidationHelper.ConvertValidationErrorsToDictionary(validationResult);
 
-               var Errors = new ModelStateDictionary();
-                foreach (var error in validationResult.Errors)
-                {
-                    Errors.AddModelError(error.PropertyName, error.ErrorMessage);
-                }
                 var createUser = await _userManager.CreateAsync(newUser, request.Password);
 
                 if (!createUser.Succeeded)
                 {
-                   // var errors = createUser.Errors.Select(e => e.Description).ToList();
-                    return new BaseResponse(false, "No posible crear al usuario", Errors);
+                    return new BaseResponse(false, "No fue posible crear al usuario", errors);
                 }
-
 
                 await _userManager.AddToRoleAsync(newUser, "User");
 
@@ -66,25 +58,33 @@ namespace TODO_User.Infrastructure.Persistence.Repository
             }
             catch
             {
-                return new BaseResponse(false, "No posible crear al usuario");
+                return new BaseResponse(false, "Ocurrio un error al crear al usuario");
             }
         }
 
         public async Task<LoginResponse> LoginAccount(LoginDTO loginDTO)
         {
-            if (loginDTO == null)
-                return new LoginResponse(false, null!, "Login container is empty");
+            try
+            {
+                if (loginDTO == null)
+                    return new LoginResponse(false, null!, "Login container is empty");
 
-            var getUser = await _userManager.FindByEmailAsync(loginDTO.Email);
-            if (getUser is null) return new LoginResponse(false, null!, "usuario no encontrado");
+                var getUser = await _userManager.FindByEmailAsync(loginDTO.Email);
+                if (getUser is null) return new LoginResponse(false, null!, "usuario no encontrado");
 
-            bool checkUserPasswords = await _userManager.CheckPasswordAsync(getUser, loginDTO.Password);
-            if (!checkUserPasswords) return new LoginResponse(false, null!, "Usuario y/o password invalidos");
+                bool checkUserPasswords = await _userManager.CheckPasswordAsync(getUser, loginDTO.Password);
+                if (!checkUserPasswords) return new LoginResponse(false, null!, "Usuario y/o password invalidos");
 
-            var getUserRole = await _userManager.GetRolesAsync(getUser);
-            var userSession = new UserSession(getUser.Id, getUser.Name!, getUser.Email!, getUserRole.First());
-            string token = GenerateToken(userSession);
-            return new LoginResponse(true, token, "Inicio de Session");
+                var getUserRole = await _userManager.GetRolesAsync(getUser);
+                var userSession = new UserSession(getUser.Id, getUser.Name!, getUser.Email!, getUserRole.First());
+                string token = GenerateToken(userSession);
+                return new LoginResponse(true, token, "Inicio de Session");
+
+            }
+            catch {
+                return new LoginResponse(false, "","Ocurrio un error al iniciar la sesion");
+            }
+           
         }
 
         private string GenerateToken(UserSession user)

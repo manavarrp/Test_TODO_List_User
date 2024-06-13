@@ -1,6 +1,9 @@
 ﻿using AutoMapper;
+using FluentValidation.Results;
 using MediatR;
+using Microsoft.IdentityModel.Tokens;
 using TODO_User.Application.Commons.Bases.Response;
+using TODO_User.Application.Helpers;
 using TODO_User.Application.Interface;
 using TODO_User.Domain.Entities.Users;
 
@@ -21,6 +24,14 @@ namespace TODO_User.Application.Feature.Commands.CreateJob
         {
             try
             {
+                CreateJobCommandValidator validator = new();
+                ValidationResult validationResult = validator.Validate(request);
+
+                var errors = ValidationHelper.ConvertValidationErrorsToDictionary(validationResult);
+                if (!errors.IsNullOrEmpty())
+                {
+                    return new BaseResponse(false, "No fue posible crear la tarea", errors);
+                }
                 var job = _mapper.Map<Job>(request);
                 job.CreatedAt = DateTime.Now;
                 await _jobApplication.AddAsync(job);
