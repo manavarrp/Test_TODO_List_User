@@ -1,13 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "0Mg7TiAvTCvwnqu8wYLf3nh+I3wPbd15YIhpMtZlVM/GlPB4SuGS/d4u3jNv79cYnE0gWKudRhxtQ4Gq8fFTXg==",
+  "dgSpecHash": "c1kpy+sje40ONJeDoBbt/ocnIw9SRofdCXjIiG4d3nXgNa1aXRTgrPujV+wFy/z7pQk7szVHu0sA9bSvhaOlXQ==",
   "success": true,
   "projectFilePath": "C:\\Projects\\TODO_User\\TODO_User\\src\\TODO_User.Infrastructure\\TODO_User.Infrastructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Mario Navarro\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Mario Navarro\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Mario Navarro\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\Mario Navarro\\.nuget\\packages\\ef.core.repository\\1.0.0.2\\ef.core.repository.1.0.0.2.nupkg.sha512",
     "C:\\Users\\Mario Navarro\\.nuget\\packages\\fluentvalidation\\11.9.2\\fluentvalidation.11.9.2.nupkg.sha512",
     "C:\\Users\\Mario Navarro\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.2\\fluentvalidation.dependencyinjectionextensions.11.9.2.nupkg.sha512",
+    "C:\\Users\\Mario Navarro\\.nuget\\packages\\mediatr\\12.3.0\\mediatr.12.3.0.nupkg.sha512",
+    "C:\\Users\\Mario Navarro\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\Mario Navarro\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\Mario Navarro\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Mario Navarro\\.nuget\\packages\\microsoft.aspnetcore.authentication.cookies\\2.2.0\\microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",

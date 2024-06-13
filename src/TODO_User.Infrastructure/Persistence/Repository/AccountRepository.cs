@@ -93,7 +93,7 @@ namespace TODO_User.Infrastructure.Persistence.Repository
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
             var userClaims = new[]
             {
-            new Claim(ClaimTypes.NameIdentifier, user.Guid.ToString()),
+            new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
             new Claim("Name", user.Name),
             new Claim("Email", user.Email),
             new Claim(ClaimTypes.Role, user.Role)

@@ -1,5 +1,6 @@
 using TODO_User.Api.Extensions;
 using TODO_User.Infrastructure.Extension;
+using TODO_User.Application;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.ConfigureDatabase(builder.Configuration);
 builder.Services.ConfigureIdentity();
 builder.Services.AddDataProtection();
+builder.Services.AddAplicationServices();
 
 
 var app = builder.Build();

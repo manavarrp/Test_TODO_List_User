@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
+using TODO_User.Application.Interface;
 using TODO_User.Application.Interface.Identity;
 using TODO_User.Infrastructure.Persistence;
 using TODO_User.Infrastructure.Persistence.Repository;
@@ -15,6 +16,7 @@ namespace TODO_User.Infrastructure.Extension
             services.AddDbContext<IdentityContext>(options => options.UseSqlServer(configuration.GetConnectionString("Default")));
 
             services.AddScoped<IAccountApplication, AccountRepository>();
+            services.AddScoped<IJobApplication, JobRepository>();
 
 
             return services;

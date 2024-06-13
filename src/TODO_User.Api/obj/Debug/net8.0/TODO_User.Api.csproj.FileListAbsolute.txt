@@ -14,7 +14,6 @@ C:\Projects\TODO_User\TODO_User\src\TODO_User.Api\obj\Debug\net8.0\TODO_User.Api
 C:\Projects\TODO_User\TODO_User\src\TODO_User.Api\obj\Debug\net8.0\TODO_User.Api.AssemblyInfoInputs.cache
 C:\Projects\TODO_User\TODO_User\src\TODO_User.Api\obj\Debug\net8.0\TODO_User.Api.AssemblyInfo.cs
 C:\Projects\TODO_User\TODO_User\src\TODO_User.Api\obj\Debug\net8.0\TODO_User.Api.csproj.CoreCompileInputs.cache
-C:\Projects\TODO_User\TODO_User\src\TODO_User.Api\obj\Debug\net8.0\TODO_User.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Projects\TODO_User\TODO_User\src\TODO_User.Api\obj\Debug\net8.0\TODO_User.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Projects\TODO_User\TODO_User\src\TODO_User.Api\obj\Debug\net8.0\staticwebassets.build.json
 C:\Projects\TODO_User\TODO_User\src\TODO_User.Api\obj\Debug\net8.0\staticwebassets.development.json
@@ -150,3 +149,7 @@ C:\Projects\TODO_User\TODO_User\src\TODO_User.Api\bin\Debug\net8.0\zh-Hant\Micro
 C:\Projects\TODO_User\TODO_User\src\TODO_User.Api\bin\Debug\net8.0\FluentValidation.dll
 C:\Projects\TODO_User\TODO_User\src\TODO_User.Api\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Projects\TODO_User\TODO_User\src\TODO_User.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Api\bin\Debug\net8.0\AutoMapper.dll
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Api\bin\Debug\net8.0\EF.Core.Repository.dll
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Api\bin\Debug\net8.0\MediatR.dll
+C:\Projects\TODO_User\TODO_User\src\TODO_User.Api\bin\Debug\net8.0\MediatR.Contracts.dll
