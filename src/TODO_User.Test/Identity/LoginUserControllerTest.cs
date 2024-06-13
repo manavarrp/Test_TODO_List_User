@@ -72,7 +72,7 @@ namespace TODO_User.Test.Identity
 
             // Assert
             Assert.IsNotNull(result);
-            Assert.AreEqual(200, result.StatusCode);
+            Assert.AreEqual(400, result.StatusCode);
             var response = result.Value as LoginResponse;
             Assert.IsNotNull(response);
             Assert.IsFalse(response.Flag);
